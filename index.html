@@ -6,82 +6,179 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Social Media Dashboard width theme switcher master</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
 </head>
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+ <section class="container">
 
-  Dark Mode
+    <section class="dashboard-start">
+      
+      <h1 class="dashboard-start__title">Social Media Dashboard</h1>
+      <p class="dashboard-start__text">Total followers: 23,004</p>
+      <div class="dashboard-start__toggle">
+        <p class="dashboard-start__toggle--text">Dark Mode</p>
+        <!--ATTETION : This block of code is taken from: https://www.w3schools.com/howto/howto_css_switch.asp-->
+        <label class="toggle">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <!--End of the external code-->
+      </div>
 
-  
+    </section>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <section class="all-followers">
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="all-followers-item">
+        <div>
+          <img src="images/icon-facebook.svg" alt="" class="icon-facebook">
+          <p class="all-followers__text">@nathanf</p>
+        </div>
+        <div>
+          <p class="all-followers__text--title">1987</p>
+          <p class="all-followers__text--two">FOLLOWERS</p>
+        </div>
+        <div class="increase">
+          <span class="increase__icon"></span>
+          <p class="increase__text">12 Today</p>
+        </div>
+      </div>
+      <div class="all-followers-item">
+        <div>
+          <img src="images/icon-twitter.svg" alt="" class="all-followers__icon-facebook">
+          <p class="all-followers__text">@nathanf</p>
+        </div>
+        <div>
+          <p class="all-followers__text--title">1987</p>
+          <p class="all-followers__text--two">FOLLOWERS</p>
+        </div>
+        <div class="increase">
+          <span class="increase__icon"></span>
+          <p class="increase__text">99 Today</p>
+        </div>
+      </div>
+      <div class="all-followers-item">
+        <div>
+          <img src="images/icon-instagram.svg" alt="" class="all-followers__icon-facebook">
+          <p class="all-followers__text">@nathanf</p>
+        </div>
+        <div>
+          <p class="all-followers__text--title">1987</p>
+          <p class="all-followers__text--two">FOLLOWERS</p>
+        </div>
+        <div class="increase">
+          <span class="increase__icon"></span>
+          <p class="increase__text">1099 Today</p>
+        </div>
+      </div>
+      <div class="all-followers-item">
+        <div>
+          <img src="images/icon-youtube.svg" alt="" class="all-followers__icon-facebook">
+          <p class="all-followers__text">@nathanf</p>
+        </div>
+        <div>
+          <p class="all-followers__text--title">1987</p>
+          <p class="all-followers__text--two">FOLLOWERS</p>
+        </div>
+        <div class="decrease">
+          <span class="decrease__icon"></span>
+          <p class="decrease__text">144 Today</p>
+        </div>
+      </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    </section>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+    <section class="today-followers">
 
+      <div class="today-followers-item">
+        <p class="today-followers__title">Page Views</p>
+        <p class="today-followes-number">87</p>
+        <img src="images/icon-facebook.svg" alt="" class="icon-facebook">
+        <div class="increase">
+          <span class="increase__icon"></span>
+          <p class="increase__text">3%</p>
+        </div>
+      </div>
+      <div class="today-followers-item">
+        <p class="today-followers__title">Likes</p>
+        <p class="today-followes-number">52</p>
+        <img src="images/icon-facebook.svg" alt="" class="icon-facebook">
+        <div class="decrease">
+          <span class="decrease__icon"></span>
+          <p class="decrease__text">2%</p>
+        </div>
+      </div>
+      <div class="today-followers-item">
+        <p class="today-followers__title">Likes</p>
+        <p class="today-followes-number">5462</p>
+        <img src="images/icon-instagram.svg" alt="" class="icon-instagram">
+        <div class="increase">
+          <span class="increase__icon"></span>
+          <p class="increase__text">2257%</p>
+        </div>
+      </div>
+      <div class="today-followers-item">
+        <p class="today-followers__title">Profile Views</p>
+        <p class="today-followes-number">52K</p>
+        <img src="images/icon-instagram.svg" alt="" class="icon-instagram">
+        <div class="increase">
+          <span class="increase__icon"></span>
+          <p class="increase__text">1375%</p>
+        </div>
+      </div>
+      <div class="today-followers-item">
+        <p class="today-followers__title">Retweets</p>
+        <p class="today-followes-number">117</p>
+        <img src="images/icon-twitter.svg" alt="" class="icon-twitter">
+        <div class="increase">
+          <span class="increase__icon"></span>
+          <p class="increase__text">303%</p>
+        </div>
+      </div>
+      <div class="today-followers-item">
+        <p class="today-followers__title">Likes</p>
+        <p class="today-followes-number">507</p>
+        <img src="images/icon-twitter.svg" alt="" class="icon-twitter">
+        <div class="increase">
+          <span class="increase__icon"></span>
+          <p class="increase__text">553%</p>
+        </div>
+      </div>
+      <div class="today-followers-item">
+        <p class="today-followers__title">Likes</p>
+        <p class="today-followes-number">107</p>
+        <img src="images/icon-youtube.svg" alt="" class="icon-youtube">
+        <div class="decrease">
+          <span class="decrease__icon"></span>
+          <p class="decrease__text">19%</p>
+        </div>
+      </div>
+      <div class="today-followers-item">
+        <p class="today-followers__title">Total Views</p>
+        <p class="today-followes-number">1407</p>
+        <img src="images/icon-youtube.svg" alt="" class="icon-youtube">
+        <div class="decrease">
+          <span class="decrease__icon"></span>
+          <p class="decrease__text">12%</p>
+        </div>
+      </div>
+    
+    </section>
 
+    <footer class="attribution">
 
-  Overview - Today
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1" target="_blank">Frontend Mentor</a>. 
+        Code by <a href="https://github.com/sebasrodri237">Sebastian Rodriguez Ardila</a> from: Colombia.
+      </p>
 
-  Page Views
-  87
-  3%
+    </footer>
 
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </section>
 </body>
 </html>
