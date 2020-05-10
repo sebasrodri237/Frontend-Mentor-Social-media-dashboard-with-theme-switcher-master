@@ -1,0 +1,33 @@
+.container{
+
+    width: 1440px;
+    height: auto;
+    display: grid;
+    grid-template-rows: 90px 310px 30px 330px;
+    grid-template-columns: 160px 1120px 160px;
+    grid-template-areas: " . dashboard-start . "
+                         " . all-followers . "
+                         " . today__title . "
+                         " . today-followers . "
+                         " . attribution attribution ";
+}
+.dashboard-start{
+
+    grid-area: dashboard-start;
+}
+.all-followers{
+
+    grid-area: all-followers;
+}
+.today__title{
+
+    grid-area: today__title;
+}
+.today-followers{
+
+    grid-area: today-followers;
+}
+.attribution{
+
+    grid-area: attribution;
+}

@@ -62,3 +62,29 @@
     border-radius: 50%;
   }
 /*End of the external code*/   
+
+.dashboard-start{
+
+  display: flex;
+}
+.dashboard-start__title{
+
+  margin: 0px;
+}
+.all-followers{
+
+  display: flex;
+}
+.today__title{
+
+  display: flex;
+  margin: 0px;
+}
+.today-followers{
+
+  display: flex;
+}
+.attribution{
+
+  display: flex;
+}
