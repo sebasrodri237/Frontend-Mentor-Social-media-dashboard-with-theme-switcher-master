@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Social Media Dashboard width theme switcher master</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/module.css">
   <link rel="stylesheet" href="css/styles.css">
   
 </head>
@@ -17,9 +18,10 @@
  <section class="container">
 
     <section class="dashboard-start">
-      
-      <h1 class="dashboard-start__title">Social Media Dashboard</h1>
-      <p class="dashboard-start__text">Total followers: 23,004</p>
+      <div>
+        <h1 class="dashboard-start__title">Social Media Dashboard</h1>
+        <p class="dashboard-start__text">Total followers: 23,004</p>
+      </div>
       <div class="dashboard-start__toggle">
         <p class="dashboard-start__toggle--text">Dark Mode</p>
         <!--ATTETION : This block of code is taken from: https://www.w3schools.com/howto/howto_css_switch.asp-->
@@ -36,7 +38,7 @@
 
       <div class="all-followers-item">
         <div>
-          <img src="images/icon-facebook.svg" alt="" class="icon-facebook">
+          <img src="images/icon-facebook.svg" alt="" class="icon">
           <p class="all-followers__text">@nathanf</p>
         </div>
         <div>
@@ -50,7 +52,7 @@
       </div>
       <div class="all-followers-item">
         <div>
-          <img src="images/icon-twitter.svg" alt="" class="all-followers__icon-facebook">
+          <img src="images/icon-twitter.svg" alt="" class="icon">
           <p class="all-followers__text">@nathanf</p>
         </div>
         <div>
@@ -64,7 +66,7 @@
       </div>
       <div class="all-followers-item">
         <div>
-          <img src="images/icon-instagram.svg" alt="" class="all-followers__icon-facebook">
+          <img src="images/icon-instagram.svg" alt="" class="icon">
           <p class="all-followers__text">@nathanf</p>
         </div>
         <div>
@@ -78,7 +80,7 @@
       </div>
       <div class="all-followers-item">
         <div>
-          <img src="images/icon-youtube.svg" alt="" class="all-followers__icon-facebook">
+          <img src="images/icon-youtube.svg" alt="" class="icon-youtube">
           <p class="all-followers__text">@nathanf</p>
         </div>
         <div>
@@ -96,79 +98,83 @@
     <h1 class="today__title">Overview - Today</h1>
 
     <section class="today-followers">
-
-      <div class="today-followers-item">
-        <p class="today-followers__title">Page Views</p>
-        <p class="today-followes-number">87</p>
-        <img src="images/icon-facebook.svg" alt="" class="icon-facebook">
-        <div class="increase">
-          <span class="increase__icon"></span>
-          <p class="increase__text">3%</p>
+      <div class="today-followers-container">
+        <div class="today-followers-item">
+          <p class="today-followers__title">Page Views</p>
+          <p class="today-followes-number">87</p>
+          <img src="images/icon-facebook.svg" alt="" class="icon">
+          <div class="increase">
+            <span class="increase__icon"></span>
+            <p class="increase__text">3%</p>
+          </div>
+        </div>
+        <div class="today-followers-item">
+          <p class="today-followers__title">Likes</p>
+          <p class="today-followes-number">52</p>
+          <img src="images/icon-facebook.svg" alt="" class="icon">
+          <div class="decrease">
+            <span class="decrease__icon"></span>
+            <p class="decrease__text">2%</p>
+          </div>
+        </div>
+        <div class="today-followers-item">
+          <p class="today-followers__title">Likes</p>
+          <p class="today-followes-number">5462</p>
+          <img src="images/icon-instagram.svg" alt="" class="icon">
+          <div class="increase">
+            <span class="increase__icon"></span>
+            <p class="increase__text">2257%</p>
+          </div>
+        </div>
+        <div class="today-followers-item">
+          <p class="today-followers__title">Profile Views</p>
+          <p class="today-followes-number">52K</p>
+          <img src="images/icon-instagram.svg" alt="" class="icon">
+          <div class="increase">
+            <span class="increase__icon"></span>
+            <p class="increase__text">1375%</p>
+          </div>
         </div>
       </div>
-      <div class="today-followers-item">
-        <p class="today-followers__title">Likes</p>
-        <p class="today-followes-number">52</p>
-        <img src="images/icon-facebook.svg" alt="" class="icon-facebook">
-        <div class="decrease">
-          <span class="decrease__icon"></span>
-          <p class="decrease__text">2%</p>
+      <div class="today-followers-container">
+        <div class="today-followers-item">
+          <p class="today-followers__title">Retweets</p>
+          <p class="today-followes-number">117</p>
+          <img src="images/icon-twitter.svg" alt="" class="icon">
+          <div class="increase">
+            <span class="increase__icon"></span>
+            <p class="increase__text">303%</p>
+          </div>
+        </div>
+        <div class="today-followers-item">
+          <p class="today-followers__title">Likes</p>
+          <p class="today-followes-number">507</p>
+          <img src="images/icon-twitter.svg" alt="" class="icon">
+          <div class="increase">
+            <span class="increase__icon"></span>
+            <p class="increase__text">553%</p>
+          </div>
+        </div>
+        <div class="today-followers-item">
+          <p class="today-followers__title">Likes</p>
+          <p class="today-followes-number">107</p>
+          <img src="images/icon-youtube.svg" alt="" class="icon">
+          <div class="decrease">
+            <span class="decrease__icon"></span>
+            <p class="decrease__text">19%</p>
+          </div>
+        </div>
+        <div class="today-followers-item">
+          <p class="today-followers__title">Total Views</p>
+          <p class="today-followes-number">1407</p>
+          <img src="images/icon-youtube.svg" alt="" class="icon">
+          <div class="decrease">
+            <span class="decrease__icon"></span>
+            <p class="decrease__text">12%</p>
+          </div>
         </div>
       </div>
-      <div class="today-followers-item">
-        <p class="today-followers__title">Likes</p>
-        <p class="today-followes-number">5462</p>
-        <img src="images/icon-instagram.svg" alt="" class="icon-instagram">
-        <div class="increase">
-          <span class="increase__icon"></span>
-          <p class="increase__text">2257%</p>
-        </div>
-      </div>
-      <div class="today-followers-item">
-        <p class="today-followers__title">Profile Views</p>
-        <p class="today-followes-number">52K</p>
-        <img src="images/icon-instagram.svg" alt="" class="icon-instagram">
-        <div class="increase">
-          <span class="increase__icon"></span>
-          <p class="increase__text">1375%</p>
-        </div>
-      </div>
-      <div class="today-followers-item">
-        <p class="today-followers__title">Retweets</p>
-        <p class="today-followes-number">117</p>
-        <img src="images/icon-twitter.svg" alt="" class="icon-twitter">
-        <div class="increase">
-          <span class="increase__icon"></span>
-          <p class="increase__text">303%</p>
-        </div>
-      </div>
-      <div class="today-followers-item">
-        <p class="today-followers__title">Likes</p>
-        <p class="today-followes-number">507</p>
-        <img src="images/icon-twitter.svg" alt="" class="icon-twitter">
-        <div class="increase">
-          <span class="increase__icon"></span>
-          <p class="increase__text">553%</p>
-        </div>
-      </div>
-      <div class="today-followers-item">
-        <p class="today-followers__title">Likes</p>
-        <p class="today-followes-number">107</p>
-        <img src="images/icon-youtube.svg" alt="" class="icon-youtube">
-        <div class="decrease">
-          <span class="decrease__icon"></span>
-          <p class="decrease__text">19%</p>
-        </div>
-      </div>
-      <div class="today-followers-item">
-        <p class="today-followers__title">Total Views</p>
-        <p class="today-followes-number">1407</p>
-        <img src="images/icon-youtube.svg" alt="" class="icon-youtube">
-        <div class="decrease">
-          <span class="decrease__icon"></span>
-          <p class="decrease__text">12%</p>
-        </div>
-      </div>
+      
     
     </section>
 

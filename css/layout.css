@@ -3,7 +3,7 @@
     width: 1440px;
     height: auto;
     display: grid;
-    grid-template-rows: 90px 310px 30px 330px;
+    grid-template-rows: 90px 310px 50px 330px;
     grid-template-columns: 160px 1120px 160px;
     grid-template-areas: " . dashboard-start . "
                          " . all-followers . "
