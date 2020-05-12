@@ -61,7 +61,14 @@
   .slider.round:before {
     border-radius: 50%;
   }
-/*End of the external code*/   
+/*End of the external code*/
+.dashboard-start,
+.all-followers,
+.today__title,
+.today-followers{
+
+  font-family: inter;
+}
 .dashboard-start__title,
 .all-followers__text--title, 
 .today-followes-number,
@@ -77,6 +84,19 @@
 
   color:#8b97c6;
 }
+.dashboard-start__text,
+.dashboard-start__toggle--text,
+.today-followers__title{
+
+  font-size: 14px;
+  font-weight: 600;
+}
+.increase,
+.decrease{
+
+  font-size: 12px;
+  font-weight: 600;
+}
 .container{
 
   background: linear-gradient(to top, hsl(230, 17%, 14%) 40%,hsl(232, 19%, 15%));
@@ -84,7 +104,7 @@
 .icon{
 
   height: 20px;
-  width: 22px;
+  width: 20px;
 }
 .dashboard-start{
 
@@ -94,6 +114,7 @@
 .dashboard-start__title{
 
   margin: 0px;
+  
 }
 .dashboard-start__toggle{
 
@@ -105,6 +126,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.all-followers__text{
+
+  font-size: 12px;
+  font-weight: 700;
+}
+.all-followers__text--title{
+
+  margin: 0;
+  font-size: 54px;
+  font-weight: 700;
+}
+.all-followers__text--two{
+
+  font-size: 12px;
+  letter-spacing: 5px;
+  font-weight: 400;
 }
 .all-followers-item{
 
@@ -150,11 +188,17 @@
 }
 .today-followers__title{
 
-  margin-top: 0px;
+  margin: 0px;
 }
 .today-followers-item .icon{
 
   margin-bottom: 30px;
+}
+.today-followes-number{
+
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 .increase{
 
