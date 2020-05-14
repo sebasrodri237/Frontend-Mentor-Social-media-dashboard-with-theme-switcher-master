@@ -91,6 +91,11 @@
   font-size: 14px;
   font-weight: 600;
 }
+.all-followers-item:nth-of-type(1),
+.all-followers-item:nth-of-type(2){
+
+  border-top: 4px solid #00BFFF;
+}
 .increase,
 .decrease{
 
@@ -145,7 +150,16 @@
   width: 255px;
   height: 215px;
   background-color: hsl(228, 28%, 20%);
+  
   border-radius: 10px;
+}
+.all-followers-item:nth-of-type(3){
+
+  border-top: 4px solid #FCC368;
+}
+.all-followers-item:nth-of-type(4){
+
+  border-top: 4px solid #C30229;
 }
 .all-followers-item__account{
 
@@ -160,7 +174,7 @@
 }
 .all-followers__text--title{
 
-  margin: 0;
+  margin: 10px 0 0 0;
   font-size: 54px;
   font-weight: 700;
 }
@@ -169,6 +183,7 @@
   font-size: 12px;
   letter-spacing: 5px;
   font-weight: 400;
+  margin-top: 10px;
 }
 .today__title{
 
