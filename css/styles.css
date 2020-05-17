@@ -1,4 +1,4 @@
-/*ATTETION : This block of code is taken from: https://www.w3schools.com/howto/howto_css_switch.asp*/
+/*/////////////////////////////////////////////ATTETION : This block of code is taken from: https://www.w3schools.com/howto/howto_css_switch.asp////////*/
 /* The switch - the box around the slider */
 .toggle {
     position: relative;
@@ -6,14 +6,12 @@
     width: 45px;
     height: 25px;
   }
-  
   /* Hide default HTML checkbox */
   .toggle input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
   /* The slider */
   .slider {
     position: absolute;
@@ -26,7 +24,6 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
   .slider:before {
     position: absolute;
     content: "";
@@ -38,30 +35,64 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
   input:checked + .slider {
     background-color: #2196F3;
   }
-  
   input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
   }
-  
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
   }
-  
   /* Rounded sliders */
   .slider.round {
     border-radius: 20px;
   }
-  
   .slider.round:before {
     border-radius: 50%;
   }
-/*End of the external code*/
+/*///////////////////////////////////////////////////////////////END OF EXTERNAL CODE/////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////LIGHT THEME /////////////////////////////////////////////////////////////////////////*/
+body.light span.slider:before{
+
+  background-color: #F4F7FF;
+}
+body.light section.container{
+
+  background: #ffffff;
+}
+body.light div.all-followers-item,
+body.light div.today-followers-item{
+
+  background-color: #F0F2F9;
+  text-decoration-color: hsl(228, 12%, 44%);
+}
+body.light div.all-followers-item:hover,
+body.light div.today-followers-item:hover{
+
+  background-color: #E1E3F0;
+}
+body.light p.dashboard-start__text,
+body.light p.all-followers__text,
+body.light p.all-followers__text--two,
+body.light h1.today__title,
+body.light p.today-followers__title{
+
+  color: #62687D;
+}
+body.light h1.dashboard-start__title,
+body.light p.all-followers__text--title,
+body.light p.today-followes-number,
+body.light footer{
+
+  color: #000000;
+}
+/*///////////////////////////////////////////////////////////////END LIGHT THEME ///////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////////DARK THEME /////////////////////////////////////////////////////////////////////////*/
 .dashboard-start,
 .all-followers,
 .today__title,
@@ -150,7 +181,6 @@
   width: 255px;
   height: 215px;
   background-color: hsl(228, 28%, 20%);
-  
   border-radius: 10px;
 }
 .all-followers-item:nth-of-type(3){
@@ -279,3 +309,4 @@
 
   display: flex;
 }
+/*///////////////////////////////////////////////////////////////END DARK THEME ///////////////////////////////////////////////////////////////////////*/
