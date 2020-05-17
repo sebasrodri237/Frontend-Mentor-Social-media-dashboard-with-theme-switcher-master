@@ -56,6 +56,7 @@
 /*///////////////////////////////////////////////////////////////END OF EXTERNAL CODE/////////////////////////////////////////////////////////////////*/
 
 /*///////////////////////////////////////////////////////////////LIGHT THEME /////////////////////////////////////////////////////////////////////////*/
+body.light div.topBackground,
 body.light span.slider:before{
 
   background-color: #F4F7FF;
@@ -135,7 +136,16 @@ body.light footer{
 }
 .container{
 
-  background: linear-gradient(to top, hsl(230, 17%, 14%) 40%,hsl(232, 19%, 15%));
+  background-color: #1D1F29;
+}
+.topBackground{
+
+  height: 250px;
+  width: 1440px;
+  background-color: #1E202D;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 1;
 }
 .icon{
 
@@ -147,6 +157,7 @@ body.light footer{
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
+  z-index: 2;
 }
 .dashboard-start__title{
 
@@ -170,6 +181,7 @@ body.light footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 .all-followers-item{
 
