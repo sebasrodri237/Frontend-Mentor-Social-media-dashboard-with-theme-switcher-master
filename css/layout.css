@@ -1,6 +1,6 @@
 .container{
 
-    width: 1440px;
+    width: 100vw;
     height: auto;
     display: grid;
     grid-template-rows: 90px 310px 50px 330px;

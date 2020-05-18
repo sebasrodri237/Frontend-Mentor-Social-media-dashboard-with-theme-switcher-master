@@ -75,6 +75,7 @@ body.light div.all-followers-item:hover,
 body.light div.today-followers-item:hover{
 
   background-color: #E1E3F0;
+  cursor: pointer;
 }
 body.light p.dashboard-start__text,
 body.light p.all-followers__text,
@@ -94,6 +95,10 @@ body.light footer{
 /*///////////////////////////////////////////////////////////////END LIGHT THEME ///////////////////////////////////////////////////////////////////////*/
 
 /*///////////////////////////////////////////////////////////////DARK THEME /////////////////////////////////////////////////////////////////////////*/
+body{
+
+  text-align: center;
+}
 .dashboard-start,
 .all-followers,
 .today__title,
@@ -128,6 +133,12 @@ body.light footer{
 
   border-top: 4px solid #00BFFF;
 }
+.all-followers-item:hover,
+.today-followers-item:hover{
+
+  background-color: #333A56;
+  cursor: pointer;
+}
 .increase,
 .decrease{
 
@@ -137,11 +148,12 @@ body.light footer{
 .container{
 
   background-color: #1D1F29;
+  margin: 0 auto;
 }
 .topBackground{
 
   height: 250px;
-  width: 1440px;
+  width: 100vw;
   background-color: #1E202D;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
