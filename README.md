@@ -1,3 +1,6 @@
+# FINAL COMMENTARIES FROM THE AUTOR OF THE REPOSITORY
+
+Hi my name is Sebastian Rodriguez Ardila and I from Latin America. Please give me advices and tricks to improve my code and my skills, this is my third challenge and I think I made a great job. THANKS!!!
 # Frontend Mentor - Social media dashboard with theme switcher
 
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
