@@ -69,7 +69,7 @@ body.light div.all-followers-item,
 body.light div.today-followers-item{
 
   background-color: #F0F2F9;
-  text-decoration-color: hsl(228, 12%, 44%);
+  text-decoration-color: #62687D;
 }
 body.light div.all-followers-item:hover,
 body.light div.today-followers-item:hover{
@@ -78,6 +78,7 @@ body.light div.today-followers-item:hover{
   cursor: pointer;
 }
 body.light p.dashboard-start__text,
+body.light p.dashboard-start__toggle--text,
 body.light p.all-followers__text,
 body.light p.all-followers__text--two,
 body.light h1.today__title,
@@ -107,6 +108,7 @@ body{
   font-family: inter;
 }
 .dashboard-start__title,
+.dashboard-start__toggle--text,
 .all-followers__text--title, 
 .today-followes-number,
 .today__title{
@@ -114,7 +116,6 @@ body{
   color: #ffffff;
 }
 .dashboard-start__text,
-.dashboard-start__toggle--text,
 .all-followers__text,
 .all-followers__text--two,
 .today-followers__title{
